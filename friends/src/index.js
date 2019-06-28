@@ -9,8 +9,9 @@ import { Provider } from 'react-redux';
 import { rootReducer } from './reducers';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
+import { addTokenToLocalStorage } from './middleware';
 
-const store = createStore(rootReducer, applyMiddleware(thunk, logger));
+const store = createStore(rootReducer, applyMiddleware(thunk, addTokenToLocalStorage, logger));
 
 ReactDOM.render(<Provider store={store}><Router><App /></Router></Provider>, document.getElementById('root'));
 
