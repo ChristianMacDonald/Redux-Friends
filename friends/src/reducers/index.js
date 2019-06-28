@@ -2,7 +2,7 @@ const initialState = {
     friends: []
 }
 
-export function reducer(state = initialState, action) {
+export function rootReducer(state = initialState, action) {
     switch (action.type) {
         default:
             return state;
