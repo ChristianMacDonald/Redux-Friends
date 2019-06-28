@@ -19,8 +19,4 @@ const LoginForm = props => {
     );
 }
 
-const mapStateToProps = state => {
-    return {};
-}
-
-export default connect(mapStateToProps, { logIn })(LoginForm);
+export default connect(() => ({}), { logIn })(LoginForm);

@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 const Friend = props => {
     return (
@@ -11,8 +10,4 @@ const Friend = props => {
     );
 }
 
-const mapStateToProps = state => {
-    return {};
-}
-
-export default connect(mapStateToProps, {})(Friend);
+export default Friend;

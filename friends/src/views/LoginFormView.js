@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 import { LoginForm } from '../components';
 
 const LoginFormView = props => {
@@ -10,8 +9,4 @@ const LoginFormView = props => {
     );
 }
 
-const mapStateToProps = state => {
-    return {};
-}
-
-export default connect(mapStateToProps, {})(LoginFormView);
+export default LoginFormView
