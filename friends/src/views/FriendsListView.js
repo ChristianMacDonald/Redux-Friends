@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchFriends } from '../actions';
-import { Friend } from '../components';
+import { Friend, AddFriendForm } from '../components';
 
 class FriendsListView extends React.Component {
     componentDidMount() {
@@ -14,6 +14,7 @@ class FriendsListView extends React.Component {
                 {this.props.friends.map(friend => {
                     return <Friend key={friend.id} friend={friend} />;
                 })}
+                <AddFriendForm />
             </div>
         );
     }
